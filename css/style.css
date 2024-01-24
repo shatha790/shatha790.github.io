@@ -265,7 +265,10 @@ a.nav-link {
   padding: 9rem 0 2rem;
   margin: 0 auto;
 }
-
+.row-projects {
+  align-items: center;
+  justify-content: center;
+}
 .heading-secondary {
   font-size: 4rem;
   color: var(--color-primary-1);
@@ -276,6 +279,7 @@ a.nav-link {
   background-color: transparent !important;
   color: #fff !important;
   border: 2px solid var(--color-primary-4) !important;
+  margin-bottom: 1.5rem;
 }
 .card:hover,
 .card:active {
@@ -301,6 +305,7 @@ a.nav-link {
 }
 .languages {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 3rem;
 }
