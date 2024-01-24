@@ -1,0 +1,221 @@
+/* ---------------------MEDIA QUERIES--------------------------- */
+
+/* big desktop */
+/* 1200px */
+@media (max-width: 75em) {
+  html {
+    font-size: 62.5%;
+  }
+  /* --------------------footer-------------------- */
+  .col h3 {
+    font-size: 1.4rem !important;
+  }
+  .icon-footer {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+}
+/* 992px */
+@media (max-width: 62em) {
+  .heading-secondary {
+    margin-bottom: 4rem;
+  }
+  /* ---------------------------projects------------------- */
+  .row-projects {
+    gap: 5rem;
+    flex-direction: column;
+  }
+  .row-projects col {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .languages {
+    flex-wrap: wrap;
+  }
+}
+/* 936.96 px */
+
+/* MOBILE NAVIGATION */
+@media (max-width: 58.56em) {
+  /* ---------------------------nav--------------------------- */
+  .btn-mobile-nav {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .nav {
+    background-color: rgba(112, 12, 134, 0.97);
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: center;
+    gap: 3rem;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 99;
+  }
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  /* if the nav-open class exits then show the close icon */
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  /* ----------------------------hero----------------------- */
+  .hero-content {
+    align-items: center;
+  }
+  .row-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wave {
+    position: relative;
+  }
+  /* ----------------------------------about---------------------------- */
+  .row.about-content {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 3.2rem;
+  }
+  .col-img {
+    order: -1;
+  }
+}
+/* 880px */
+@media (max-width: 55em) {
+  .heading,
+  .heading-name,
+  .heading-main,
+  .details h1,
+  .social-icons-list {
+    padding-left: 0 !important;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+  }
+  /* ------------------------------footer------------------------- */
+  .row-footer {
+    flex-direction: column;
+    padding-top: 3rem;
+    gap: 1rem;
+  }
+  .icons-footer {
+    padding-top: 0;
+  }
+}
+/* 752px */
+@media (max-width: 47em) {
+  /* ---------------------------hero------------------------- */
+
+  .heading,
+  .heading-name {
+    font-size: 4rem !important;
+  }
+  .heading-main {
+    font-size: 5rem !important;
+  }
+  .main-name {
+    font-size: 5rem !important;
+  }
+  /* --------------------------about------------------------- */
+  .about-text {
+    font-size: 1.6rem;
+  }
+  .skills {
+    gap: 1rem;
+  }
+  .heading-tertiary {
+    font-size: 2.5rem;
+  }
+  .skills-list {
+    gap: 2rem;
+  }
+  .logo-img {
+    width: 4rem;
+  }
+  /* ------------------------------contact-------------------- */
+  .icons {
+    flex-direction: column;
+    gap: 5.5rem;
+    margin-top: 5rem;
+  }
+}
+/* 
+32.56
+577px
+*/
+@media (max-width: 36.12em) {
+  /* ------------------------------nav---------------------- */
+  .icon-mobile-nav {
+    height: 3.8rem;
+    width: 3.8rem;
+  }
+  .logo {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+  /* ------------------------------hero------------------------ */
+  .heading,
+  .heading-name {
+    font-size: 4rem;
+  }
+  .wave {
+    font-size: 4rem;
+  }
+  .main-name {
+    font-size: 5rem;
+  }
+  .details h1 {
+    font-size: 2rem;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  /* --------------------------about----------------------- */
+  .row.about-content {
+    margin: 5rem auto;
+  }
+  .skills {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    padding: 0 2.7rem;
+  }
+  .heading-tertiary {
+    border-right: 0;
+    padding: 0 0 0.7rem 0;
+    border-bottom: var(--color-primary-3) 3px solid;
+  }
+  .skills-list {
+    padding-left: 0;
+  }
+  .col-img {
+    width: 100% !important;
+  }
+  /* ----------------------------------project------------------------ */
+  .col-project {
+    padding: 0 2.2rem;
+  }
+}
