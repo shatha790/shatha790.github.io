@@ -312,7 +312,8 @@ a.nav-link {
 .css,
 .html,
 .java,
-.sass {
+.sass,
+.django {
   font-size: 1.8rem;
   font-weight: 600;
   display: inline-block;
@@ -335,6 +336,10 @@ a.nav-link {
 .sass {
   background-color: #e685b5;
   color: #64193e;
+}
+.django {
+  background-color: rgb(110, 239, 110);
+  color: rgb(40, 87, 40);
 }
 .buttons {
   display: flex;
