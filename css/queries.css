@@ -22,7 +22,6 @@
   }
   /* ---------------------------projects------------------- */
   .row-projects {
-    gap: 5rem;
     flex-direction: column;
   }
   .row-projects col {
@@ -30,9 +29,6 @@
     align-items: center;
   }
 
-  .languages {
-    flex-wrap: wrap;
-  }
 }
 /* 936.96 px */
 
